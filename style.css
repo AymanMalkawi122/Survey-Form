@@ -1,0 +1,89 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-image: linear-gradient(90deg, rgba(190, 31, 164, 0.5), rgba(141, 54, 255, 0.5)), url("https://media.wired.com/photos/627da1085d49787abdf713b4/master/w_2560%2Cc_limit/Pakistani-Gamers-Want-a-Seat-at-the-Table-Culture-shutterstock_1949862841.jpg");
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 2%;
+    width: fit-content;
+}
+
+header>* {
+    margin-bottom: 2%;
+}
+
+main {
+    padding: 1%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 40%;
+    height: fit-content;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 3%;
+}
+
+#title {
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 250%;
+}
+
+.formElement {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    height: 100%;
+    width: 100%;
+
+}
+
+.formElement>* {
+    margin-top: 2%;
+}
+
+#comments {
+    height: auto;
+    resize: none;
+}
+
+.bar {
+    padding: 2%;
+}
+
+input[type=radio],
+input[type=checkbox] {
+    height: 16px;
+    width: 5%;
+}
+
+label{
+    display: flex;
+    align-items: center;
+}
+
+option{
+font-size: 15px;
+}
+
+input[type=submit]{
+    margin: auto;
+    height: 40px;
+    width: 40%;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 id="title">Ayman's Gaming Survey Form</h1>
+        <p id="description">Thank you for participating!</p>
+    </header>
+    <main>
+
+
+        <form id="survey-form">
+
+            <div class="formElement">
+                <label for="name" id="name-label">Name</label>
+                <input class="bar" type="text" id="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="formElement">
+                <label for="email" id="email-label">Email</label>
+                <input class="bar" type="email" id="email" placeholder="Enter your Email" required>
+            </div>
+
+            <div class="formElement">
+                <label for="number" id="number-label">Age<span class="span-label">(optional)</span></label>
+                <input class="bar" type="number" id="number" min="18" max="35" placeholder="Age">
+            </div>
+
+            <div class="formElement">
+                <label for="dropdown" id="dropdown-label">
+                    Which option describes you best?
+                </label>
+                <select class="bar" id="dropdown" required>
+                    <option disabled selected>Select an option</option>
+                    <option>Mobile Gamer</option>
+                    <option>PC Gamer</option>
+                </select>
+            </div>
+
+            <div class="formElement">
+                <p id="freeTimeTag">How much free time do you have on average?</p>
+
+                <label for="three">
+                    <input type="radio" id="three" name="freeTime">
+                    Three Hours</label>
+
+                <label for="five">
+                    <input type="radio" id="five" name="freeTime">
+                    Five Hours</label>
+
+                <label for="seven">
+                    <input type="radio" id="seven" name="freeTime">
+                    Seven Hours</label>
+            </div>
+
+            <div class="formElement">
+                <label for="dropdownShop" id="dropdown-label">
+                    Which online Game store do you use?
+                </label>
+                <select class="bar" id="dropdownShop" required>
+                    <option disabled selected>Select an option</option>
+                    <option>Epic Games</option>
+                    <option>Steam</option>
+                </select>
+
+            </div>
+
+
+            <div class="formElement">
+                <p>Have you ever played any of these games?<span class="span-label">
+                        (Check all that apply)</span></p>
+
+                <label for="hollowKnight">
+                    <input type="checkbox" id="hollowKnight" name="freeTime" value="hollowKnight">
+                    Hollow Knight</label>
+
+                <label for="metro">
+                    <input type="checkbox" id="metro" name="freeTime" value="metro">
+                    Metro</label>
+
+                <label for="darkSouls">
+                    <input type="checkbox" id="darkSouls" name="freeTime" value="darkSouls">
+                    Dark Souls</label>
+
+                <label for="cyberPunk">
+                    <input type="checkbox" id="cyberPunk" name="freeTime" value="cyberPunk">
+                    Cyberpunk 2077</label>
+
+                <label for="godOfWar">
+                    <input type="checkbox" id="godOfWar" name="freeTime" value="godOfWar">
+                    God Of War</label>
+            </div>
+
+            <div class="formElement">
+                <p>Any comments or suggestions?</p>
+                <textarea rows="5" id="comments" placeholder="Enter your comment here..."></textarea>
+            </div>
+
+            <div class="formElement">
+                <input type="submit" value="Submit" id="submit">
+            </div>
+        </form>
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
